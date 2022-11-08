@@ -153,6 +153,7 @@ footer{
 #gallery > ul{
     width: 70%;
     margin: 0 auto;    
+    display: flex;    
 } 
 #gallery li{
     padding: 10px;  
