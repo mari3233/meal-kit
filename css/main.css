@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@100;200;300;400;500;700&display=swap');
 .bx-wrapper{
     border: 0;
     margin: 0;
@@ -9,24 +10,28 @@
 .bx-wrapper::after{
     content: "";
     display: block;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,.4);
+    width: 100%; height: 100%;    
+    background: rgba(0,0,0,.5);
     position: absolute;
     top: 0; left: 0;
 }
 footer{
-    padding-left: 5%;
+    width: 100%;
+    margin: 0 auto;    
     line-height: 60px;
     color: #fff;
     background: #272c35;
+    padding-left: 15%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 
 header{
     position: fixed;
-    width: 100%;
-    padding: 0 10%;
-    box-sizing: border-box;
+    width: 70%;    
+    padding: 0 15%;
+    /* box-sizing: border-box; */
     z-index: 10;
     top: 0; left: 0;
     display: flex;
@@ -35,30 +40,35 @@ header{
     line-height: 80px;
     font-size: 1rem;
     background: rgba(0,0,0,.6);
+    font-family: 'Inter', sans-serif;
 }
 .gnb{
     display: flex;
     width: 50%;
     justify-content: space-between;
+    font-family: 'Inter', sans-serif;
 }
 
 
 .slide_title{
     position: absolute;
     top: 60%; left: 15%;
-    color: #fff;
+    color: #fff;    
 }
 .slide_title h3{
     font-size: 1rem;
     font-weight: lighter;
     line-height: 24px;
+    font-family: 'Inter', sans-serif;
 }
 .slide_title h1{
     font-size: 2rem;
     line-height: 60px;
+    font-family: 'Inter', sans-serif;
 }
 .slide_title p{
     font-size: 0.8rem;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 
@@ -68,12 +78,15 @@ header{
     background:#272c35; 
     padding-top: 80px;
     padding-bottom: 80px;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
 }
 #contents > h3, #menu > h3{
     text-align: center;
     line-height: 40px;
     color: #af9a0b;
     font-size: .8rem;
+    font-family: 'Inter', sans-serif;
 }
 #contents h1, #menu h1{
     text-align: center;
@@ -81,6 +94,7 @@ header{
     font-size: 1.4rem;
     color: #fff;
     margin-bottom: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 #contents ul{
     width: 70%;
@@ -99,6 +113,7 @@ header{
     padding-top: 100px;
     box-sizing: border-box;
     color: #495057;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .reText h3{
     font-size: 1rem;
@@ -110,8 +125,8 @@ header{
 .reText p{
     font-size: .8rem;
 }
-footer{
-    border-top: 1px #495057 solid;
+footer{   
+    border-top: 1px #495057 solid;  
 }
 
 
@@ -125,6 +140,7 @@ footer{
     box-sizing: border-box;
     padding-top: 200px;
     padding-bottom: 200px;
+    font-family: 'Inter', sans-serif; 
 }
 #menu > ul{
     width: 70%;
@@ -141,29 +157,64 @@ footer{
 #menu li:nth-child(even){
     background: #ccc;
 }
-
+#menu h3{
+    font-family: 'Inter', sans-serif;
+}
 
 
 /* gallery */
 #gallery{
     background:#272c35; 
-    padding-top: 200px;
-    padding-bottom: 200px;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
-#gallery > ul{
+/* #gallery > ul{ 
+    display: flex;   
+    flex-flow: wrap;  
+    justify-content: center;
+}  */
+.gallery-list{
     width: 70%;
-    margin: 0 auto;    
-    display: flex;    
-} 
-#gallery li{
-    padding: 10px;  
+    margin: 0 auto;
+    display: flex;   
+    flex-flow: wrap;  
+    justify-content: center;
+}
+.gallery-list li{
+    padding: 10px;      
     width: calc(100% / 3); 
+    box-sizing: border-box;
 }
 #gallery img{
     width: 100%;
 }
 
-
+.gallery-list a{
+    position: relative;
+    overflow: hidden;
+}
+.gallery-list a:hover .text{
+    top: 0;
+    transition: .3s;
+}
+.gallery-list .text{
+    position: absolute;
+    width:  100%;
+    height: 100%;
+    background: #573d3dbe;    
+    top: 100%;   
+    text-align: center;
+}
+.gallery-list .text p{    
+    color: #fff;
+    font-size: .8rem;
+    position: absolute;
+    top: 45%;  
+    width: 100%;
+}
 
 
 /* contact */
@@ -171,21 +222,33 @@ footer{
     background:#272c35; 
     height: calc(100vh - 60px);
     box-sizing: border-box;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 250px;
+    padding-bottom: 250px;
     color: #fff;
 }
 #contact ul{
     width: 70%;
     margin: 0 auto;
-    display: flex;
+    display: flex;  
 }
 #contact li:first-child{
     width: 40%;    
 }
-#contact li:last-child{
-    width: 60%;  
+#contact li:first-child h3{
+    line-height: 60px;
+}
+#contact li:first-child p{
+    margin-top: 4px;
+    margin-bottom: 40px;
 }
 
 
+#contact li:last-child{
+    width: 60%;      
+}
+
+
+@media screen and (max-width:1024px){
+    .gnb{display: none;}
+}
 
