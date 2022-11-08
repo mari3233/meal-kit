@@ -152,11 +152,11 @@ footer{
 }
 #gallery > ul{
     width: 70%;
-    margin: 0 auto;
-    display: flex;
-}
+    margin: 0 auto;    
+} 
 #gallery li{
-    width: calc(100% / 3);   
+    padding: 10px;  
+    width: calc(100% / 3); 
 }
 #gallery img{
     width: 100%;
@@ -185,3 +185,6 @@ footer{
 #contact li:last-child{
     width: 60%;  
 }
+
+
+
