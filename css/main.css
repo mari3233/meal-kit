@@ -52,7 +52,7 @@ header{
 
 .slide_title{
     position: absolute;
-    top: 60%; left: 15%;
+    top: 50%; left: 15%;
     color: #fff;    
 }
 .slide_title h3{
@@ -250,5 +250,8 @@ footer{
 
 @media screen and (max-width:1024px){
     .gnb{display: none;}
+    .slide_title{        
+        top: 30%; left: 15%;         
+    }
 }
 
