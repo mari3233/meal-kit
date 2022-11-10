@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal Kit Steak</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">    
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                Meal Kit
+                <img src="img/logo-made.png" alt="로고">           
             </a>
         </div>
         <ul class="gnb">
@@ -21,13 +22,25 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact us</a></li>
         </ul>
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="popup_nav">
+            <li><a href="intro.html">Introduce</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </div>  
     </header>
 
     <div id="contents">
         <h3>Recommend</h3>
         <h1>이럴때 드시면 좋습니다.</h1>
-        <ul>
-            <li class="reText">
+        <ul class="first">
+            <li class="reText1">
                 <h3><span>캠핑장</span>에서</h3>
                 <P>재료 세척과 손질이 필요하지 않아<br>
                     캠핑장에서도 손쉽게 요리할 수 있습니다.</P>
@@ -36,11 +49,11 @@
                 <img src="img/slide2.jpg" alt="">
             </li>
         </ul>
-        <ul>
+        <ul class="second">
             <li>
                <img src="img/slide3.jpg" alt="">
             </li>
-            <li class="reText">
+            <li class="reText2">
                 <h3><span>홈파티</span>에서</h3>
                 <P>홈파티에서도 외식 못지않은 <br> 
                     퀄리티를 낼 수 있어 손님 대접용으로도 좋습니다.</P>
@@ -50,7 +63,8 @@
        
    
    <footer>
-     COPYRIGHT MARI ALL RIGHTS RESERVED.
+     COPYRIGHT SUN ALL RIGHTS RESERVED.
    </footer>
+   <script src="js/main.js"></script>
 </body>
 </html>
