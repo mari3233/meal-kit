@@ -9,7 +9,7 @@
 }
 
 .bx-wrapper img{
-    height: calc(100vh - 60px);       
+    height: calc(100vh - 60px);   
 }
 .bx-wrapper::after{
     content: "";
@@ -225,7 +225,7 @@ footer{
 }  */
 .gallery-list{
     width: 70%;
-    margin:  auto;
+    margin: 0 auto;
     display: flex;   
     flex-flow: wrap;  
     justify-content: center;
@@ -495,7 +495,7 @@ footer{
 }    
 @media screen and (max-width:428px){
     .bx-wrapper img{
-        height: 50vh;
+        overflow: hidden;
            
     }
 }
